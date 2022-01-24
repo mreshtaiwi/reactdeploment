@@ -17,3 +17,9 @@ jobs:
         with:
           branch: main # The branch the action should deploy to.
           folder: build # The folder the action should deploy.
+      - name: Deploy to GH Pages
+        run: | 
+        git config --global user.name "mreshtaiwi",
+        git remote set-url origin git@github.com:mreshtaiwi/reactdeploment.get,
+        npm install,
+        npm run deploy
